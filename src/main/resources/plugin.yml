@@ -1,0 +1,9 @@
+name: VersatiaExample-Tasks-Threads
+version: '${version}'
+main: com.github.marcoral.versatia.example.threads.ThreadsPlugin
+api-version: '1.21'
+author: Versatia
+description: File reading moved off the server thread and back with withContext.
+# Kotlin and kotlinx.coroutines classes come from VersatiaCore's class loader; do not list kotlin-stdlib or kotlinx-coroutines here
+depend:
+  - VersatiaCore

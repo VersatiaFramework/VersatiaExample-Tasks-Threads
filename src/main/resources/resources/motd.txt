@@ -1,0 +1,2 @@
+Welcome! This text was read from plugins/VersatiaExample-Tasks-Threads/motd.txt on a worker thread.
+Edit the file and rejoin: no reload needed, it is read at every join.
