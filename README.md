@@ -29,7 +29,7 @@ The worker's number varies. The joining player reads the two lines of `motd.txt`
 
 ## Building
 
-Requires JDK 21 and VersatiaStarter with what it exports (VersatiaAPI, the module APIs) and
+Requires JDK 21 and VersatiaAPI and
 VersatiaCatalog, which supplies every version, in your local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
 [Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
 running it requires a Paper 1.21.4 server with VersatiaCore installed.
@@ -44,5 +44,5 @@ To have the JAR copied to your server after every build, copy `local.properties.
 
 The Versatia version is `versatiaVersion` in `gradle.properties`; `settings.gradle.kts` imports
 the matching [VersatiaCatalog](https://versatiaframework.github.io/VersatiaDocs/docs/getting-started/installation#versatia-catalog),
-so the build script writes `libs.versatia.starter` and `alias(libs.plugins.ksp)` instead of version
+so the build script writes `libs.versatia.api` and `alias(libs.plugins.ksp)` instead of version
 numbers.
