@@ -2,7 +2,7 @@
 
 The coroutines of a `PluginScope` run on the server thread; `withContext(Dispatchers.IO)` moves blocking work, here reading a file at every join, to a worker thread and comes back for the Bukkit calls.
 
-Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Threads](https://versatia.dev/docs/tasks#threads).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Threads](https://versatia.dev/docs/tasks/coroutines#threads).
 
 **Start with** [`Greetings.kt`](src/main/kotlin/dev/versatia/example/threads/Greetings.kt); the message is [`resources/motd.txt`](src/main/resources/resources/motd.txt).
 
