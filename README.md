@@ -2,9 +2,9 @@
 
 The coroutines of a `PluginScope` run on the server thread; `withContext(Dispatchers.IO)` moves blocking work, here reading a file at every join, to a worker thread and comes back for the Bukkit calls.
 
-Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Threads](https://versatiaframework.github.io/VersatiaDocs/docs/tasks#threads).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Threads](https://versatia.dev/docs/tasks#threads).
 
-**Start with** [`Greetings.kt`](src/main/kotlin/com/github/marcoral/versatia/example/threads/Greetings.kt); the message is [`resources/motd.txt`](src/main/resources/resources/motd.txt).
+**Start with** [`Greetings.kt`](src/main/kotlin/dev/versatia/example/threads/Greetings.kt); the message is [`resources/motd.txt`](src/main/resources/resources/motd.txt).
 
 ## What the log shows
 
@@ -31,7 +31,7 @@ The worker's number varies. The joining player reads the two lines of `motd.txt`
 
 Requires JDK 21 and VersatiaAPI and
 VersatiaCatalog, which supplies every version, in your local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
-[Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
+[Building the framework](https://versatia.dev/docs/contributing/building));
 running it requires a Paper 1.21.4 server with VersatiaCore installed.
 
 ```bash
@@ -43,6 +43,6 @@ To have the JAR copied to your server after every build, copy `local.properties.
 `build/generated/ksp/main/kotlin`; open it to see exactly what the runtime executes.
 
 The Versatia version is `versatiaVersion` in `gradle.properties`; `settings.gradle.kts` imports
-the matching [VersatiaCatalog](https://versatiaframework.github.io/VersatiaDocs/docs/getting-started/installation#versatia-catalog),
+the matching [VersatiaCatalog](https://versatia.dev/docs/getting-started/installation#versatia-catalog),
 so the build script writes `libs.versatia.api` and `alias(libs.plugins.ksp)` instead of version
 numbers.

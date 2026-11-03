@@ -1,7 +1,7 @@
-package com.github.marcoral.versatia.example.threads
+package dev.versatia.example.threads
 
-import com.github.marcoral.versatia.di.LocalBean
-import com.github.marcoral.versatia.task.PluginScope
+import dev.versatia.di.LocalBean
+import dev.versatia.task.PluginScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

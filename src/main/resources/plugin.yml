@@ -1,6 +1,6 @@
 name: VersatiaExample-Tasks-Threads
 version: '${version}'
-main: com.github.marcoral.versatia.example.threads.ThreadsPlugin
+main: dev.versatia.example.threads.ThreadsPlugin
 api-version: '1.21'
 author: Versatia
 description: File reading moved off the server thread and back with withContext.
